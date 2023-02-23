@@ -1,3 +1,28 @@
+body {
+  background-color: #ccc;
+}
+
+.mobile-input-name {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.input {
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+
+.input::placeholder {
+  color: black;
+
+}
+
+.input:not(:placeholder-shown):required+span {
+  display: none;
+}
+
 /* Vite promo styles */
 .vite-promo {
   padding: 5rem 0;
